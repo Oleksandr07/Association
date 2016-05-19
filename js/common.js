@@ -53,7 +53,9 @@ $(function(){
 	
 	/*---------------     slider     ---------------*/
 	$('.content img.fll').each(function() {
-		$(this).after('<span class="img-title">' + $(this).attr('title') + '</span>');
+		if ($(this).attr('title') !=  undefined) {
+			$(this).after('<span class="img-title">' + $(this).attr('title') + '</span>');
+		}
 	});
 	function imgTitle(){
 		$('img').load(function() {

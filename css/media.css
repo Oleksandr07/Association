@@ -43,14 +43,29 @@
   .gallery-block {
     width: 770px;
   }
-  .media-box:first-child {
+  .gallery .media-box:first-child {
     width: 170px;
   }
-  .media-box:first-child .media-head {
+  .gallery .media-box:first-child .media-head {
+    width: auto;
     height: 110px;
     margin-bottom: 15px;
   }
-  .media-box:first-child .media-head:before {
+  .gallery .media-box:first-child .media-head:before {
+    background-size: 64px;
+  }
+  .gallery .media-box:first-child.media-video .media-head:before {
+    background-size: 64px;
+  }
+  .media-box {
+    width: 220px;
+    margin-left: 20px;
+  }
+  .media-head {
+    width: 220px;
+    height: 150px;
+  }
+  .media-video .media-head:before {
     background-size: 64px;
   }
   .footer-left {
@@ -82,6 +97,16 @@
     height: 210px;
   }
   .news-body {
+    width: 500px;
+  }
+  .documents-box {
+    width: 340px;
+    margin-left: 20px;
+  }
+  .title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
+    width: 510px;
+  }
+  .projects-body {
     width: 500px;
   }
 }
@@ -342,32 +367,40 @@
     float: none;
     width: auto;
   }
-  .media-box {
-    width: 48%;
-    float: none;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 4%;
-    margin-bottom: 30px;
+  .gallery .media-box {
+    width: 30%;
+    margin-left: 5%;
   }
-  .media-box:first-child {
-    width: 48%;
+  .gallery .media-box:first-child {
+    width: 30%;
+    margin-left: 5%;
   }
-  .media-box:first-child .media-head {
+  .gallery .media-box:first-child .media-head {
+    width: auto;
     height: auto;
   }
-  .media-box:first-child .media-head:before {
-    background-size: 128px;
+  .gallery .media-box:nth-child(3n+1) {
+    margin-left: 0;
   }
-  .media-box:nth-child(odd) {
+  .gallery .media-box .media-head {
+    width: auto;
+    height: auto;
+  }
+  .media-box {
+    width: 30%;
+    margin-left: 5%;
+  }
+  .media-box:nth-child(3n+1) {
     margin-left: 0;
   }
   .media-head {
+    width: auto;
     height: auto;
     line-height: 0;
+    margin-bottom: 15px;
   }
   .media-video .media-head:before {
-    background-size: 128px;
+    background-size: 64px;
   }
   .media-top {
     margin-bottom: 15px;
@@ -396,6 +429,7 @@
   }
   .link-more a {
     background-size: 20px;
+    font-size: 18px;
     padding-right: 30px;
   }
   .gallery-reclame {
@@ -462,6 +496,7 @@
   .breadcrumbs ul li {
     font-size: 18px;
     padding-left: 20px;
+    margin-bottom: 5px;
   }
   .breadcrumbs ul li:before {
     left: 5px;
@@ -481,6 +516,14 @@
   aside {
     float: none;
     width: auto;
+  }
+  .aside-nav ul li a {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 25px 15px 50px;
+  }
+  .aside-nav ul li a:before {
+    top: 25px;
   }
   .aside-nav ul li a:after {
     left: 3%;
@@ -547,6 +590,120 @@
     width: 42px;
     height: 42px;
   }
+  .documents-box {
+    width: 48%;
+    margin-left: 4%;
+  }
+  .documents-title {
+    font-size: 16px;
+  }
+  .news-page .news-category {
+    float: right;
+    margin-right: 0;
+  }
+  .title h1, .title h2, .title h3, .title h4, .title h5, .title h6 {
+    width: auto;
+  }
+  .reviews-box {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+  }
+  .reviews-date {
+    font-size: 16px;
+  }
+  .practice-box {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+  }
+  .practice-date {
+    font-size: 16px;
+  }
+  .practice-category {
+    padding: 0 20px;
+  }
+  .contacts table tbody tr td:first-child {
+    font-size: 16px;
+  }
+  .projects-box {
+    display: table;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .projects-head {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+  }
+  .projects-body {
+    float: none;
+    width: auto;
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 30px;
+  }
+  .projects-title {
+    margin-bottom: 15px;
+  }
+  .projects-text {
+    margin-bottom: 15px;
+  }
+  .projects-links a {
+    font-size: 16px;
+  }
+  .calendars-box {
+    padding: 20px 0;
+  }
+  .calendars-head {
+    width: 100px;
+  }
+  .calendars-date {
+    width: 100px;
+    height: 100px;
+    line-height: 20px;
+    padding: 30px 10px;
+  }
+  .calendars-day {
+    font-size: 20px;
+  }
+  .calendars-month {
+    font-size: 16px;
+  }
+  .calendars-title a {
+    font-size: 18px;
+  }
+  .events-table table thead tr td, .events-table table thead tr th {
+    font-size: 16px;
+  }
+  input[type="text"], input[type="tel"], input[type="password"], input[type="email"], textarea {
+    height: 40px;
+    font-size: 18px;
+  }
+  /* all */
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  ::-moz-placeholder {
+    font-size: 16px;
+  }
+  /* firefox 19+ */
+  :-ms-input-placeholder {
+    font-size: 16px;
+  }
+  /* ie */
+  input:-moz-placeholder {
+    font-size: 16px;
+  }
+  .form-box input[type="submit"] {
+    height: 40px;
+    font-size: 16px;
+  }
+  .form-box input[type="reset"] {
+    height: 40px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -574,6 +731,49 @@
   .board-box:nth-child(2n+1) {
     margin-left: 0;
   }
+  .gallery .media-box {
+    width: 48%;
+    margin-left: 4%;
+  }
+  .gallery .media-box:first-child {
+    width: 48%;
+    margin-left: 4%;
+  }
+  .gallery .media-box:nth-child(3n+1) {
+    margin-left: 4%;
+  }
+  .gallery .media-box:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  .gallery .media-box:first-child.media-video .media-head:before {
+    background-size: 100px;
+  }
+  .gallery .media-video .media-head:before {
+    background-size: 100px;
+  }
+  .media-box {
+    width: 48%;
+    margin-left: 4%;
+  }
+  .media-box:nth-child(3n+1) {
+    margin-left: 4%;
+  }
+  .media-box:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  .media-video .media-head:before {
+    background-size: 100px;
+  }
+  .documents-box {
+    display: block;
+    width: auto;
+    margin-left: 0;
+  }
+  .form-group {
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 599px) {
@@ -587,6 +787,26 @@
   .statistics-link {
     display: none;
   }
+  .gallery .media-box {
+    width: auto;
+    margin-left: 0;
+  }
+  .gallery .media-box:first-child {
+    width: auto;
+    margin-left: 0;
+  }
+  .gallery .media-box:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  .gallery .media-box:nth-child(2n+1) {
+    margin-left: 0;
+  }
+  .gallery .media-box:first-child.media-video .media-head:before {
+    background-size: 180px;
+  }
+  .gallery .media-video .media-head:before {
+    background-size: 180px;
+  }
   .media-box {
     width: auto;
     display: block;
@@ -599,6 +819,12 @@
     width: auto;
     border-top: 0;
     padding-top: 0;
+  }
+  .media-box:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  .media-box:nth-child(2n+1) {
+    margin-left: 0;
   }
   .media-video .media-head:before {
     background-size: 180px;
@@ -688,6 +914,51 @@
   .news-top {
     margin-bottom: 10px;
   }
+  .reviews-head {
+    width: 90px;
+  }
+  .reviews-img {
+    width: 90px;
+    height: 90px;
+  }
+  .reviews-body {
+    padding-left: 15px;
+  }
+  .contacts table tbody tr td:last-child {
+    padding-left: 10px !important;
+  }
+  .projects-box {
+    display: block;
+    width: auto;
+  }
+  .projects-head {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .projects-body {
+    display: block;
+    padding-left: 0;
+  }
+  .calendars-box {
+    display: block;
+  }
+  .calendars-head {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .calendars-date {
+    display: inline-block;
+  }
+  .calendars-body {
+    display: block;
+  }
+  .events-table table tr td {
+    padding-right: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 419px) {
@@ -746,6 +1017,12 @@
   .events-day {
     font-size: 18px;
   }
+  .gallery .media-box:first-child.media-video .media-head:before {
+    background-size: 124px;
+  }
+  .gallery .media-video .media-head:before {
+    background-size: 124px;
+  }
   .media-video .media-head:before {
     background-size: 124px;
   }
@@ -768,5 +1045,21 @@
   .pagers ul li a {
     width: 32px;
     height: 32px;
+  }
+  .documents-title {
+    background-position: 15px center;
+    padding: 10px 50px;
+  }
+  .documents-title:hover {
+    background-position: 15px center;
+  }
+  .news-page .news-date {
+    float: none;
+  }
+  .news-page .news-category {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
   }
 }
