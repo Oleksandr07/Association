@@ -109,6 +109,10 @@
   .projects-body {
     width: 500px;
   }
+  .academy-calendar .calendars-box {
+    width: 320px;
+    margin-left: 60px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -704,6 +708,10 @@
     font-size: 16px;
     margin-left: 20px;
   }
+  .academy-calendar .calendars-box {
+    width: 48%;
+    margin-left: 4%;
+  }
 }
 
 @media only screen and (max-width: 799px) {
@@ -773,6 +781,27 @@
     float: none;
     width: auto;
     margin-left: 0;
+  }
+  .partners-head {
+    width: 45%;
+  }
+  .partners-category {
+    background: transparent;
+    padding-left: 0;
+  }
+  .contacts-box {
+    float: none;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .academy-calendar .calendar-row {
+    border-top: 0;
+  }
+  .academy-calendar .calendars-box {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    border-top: 1px dotted #92acb6;
   }
 }
 
@@ -958,6 +987,18 @@
   }
   .events-table table tr td {
     padding-right: 20px !important;
+  }
+  .partners-box {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .partners-head {
+    display: block;
+    width: auto;
+  }
+  .partners-body {
+    display: block;
   }
 }
 

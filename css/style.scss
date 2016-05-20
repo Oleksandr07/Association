@@ -1102,6 +1102,9 @@ section{
 					}
 				}
 			}
+			.link-more{
+				top: 0;
+			}
 		}
 		.title{
 			position: relative;
@@ -1665,6 +1668,8 @@ section{
 				}
 	.contacts{
 		position: relative;
+		margin-bottom: 30px;
+		overflow: hidden;
 		table{
 			tbody{
 				tr{
@@ -1692,6 +1697,23 @@ section{
 			}
 		}
 	}
+		.contacts-block{
+			position: relative;
+			border-top: 1px dotted #92acb6;
+			padding-top: 30px;
+			overflow: hidden;
+		}
+			.contacts-box{
+				position: relative;
+				float: left;
+				width: 300px;
+				padding-right: 30px;
+				box-sizing: border-box;
+				a{
+					color: #12aaeb;
+					font-family: 'PFDinDisplayPro Bold';
+				}
+			}
 	.projects{
 		position: relative;
 	}
@@ -1739,7 +1761,7 @@ section{
 				}
 				.projects-text{
 					position: relative;
-					margin-bottom: 25px;
+					margin-bottom: 15px;
 				}
 				.projects-links{
 					font-size: 0;
@@ -1755,8 +1777,14 @@ section{
 						}
 					}
 				}
+					.projects-more{
+						background: url('../img/arr-more.png') right center no-repeat;
+						background-size: 16px;
+						padding-right: 20px;
+					}
 	.calendar{
 		position: relative;
+		margin-bottom: 30px;
 	}
 		.calendars-box{
 			position: relative;
@@ -1764,6 +1792,7 @@ section{
 			width: 100%;
 			border-top: 1px dotted #92acb6;
 			padding: 35px 0;
+			box-sizing: border-box;
 			&:first-child{
 				border-top: 0;
 			}
@@ -1819,6 +1848,24 @@ section{
 							}
 						}
 					}
+		.academy-calendar{
+			position: relative;
+			overflow: hidden;
+			.calendar-row{
+				position: relative;
+				border-top: 1px dotted #92acb6;
+				overflow: hidden;
+			}
+			.calendars-box{
+				float: left;
+				width: 370px;
+				border-top: none;
+				margin-left: 130px;
+				&:nth-child(odd){
+					margin-left: 0;
+				}
+			}
+		}
 	.event-category{
 		position: relative;
 		display: inline-block;
@@ -1909,6 +1956,47 @@ section{
 				border-top: 1px dotted #92acb6;
 				padding-top: 15px;
 			}
+	.partners{
+		position: relative;
+	}
+		.partners-block{
+			position: relative;
+		}
+			.partners-category{
+				position: relative;
+				background: url('../img/arr-category.png') left 4px no-repeat;
+				background-size: 16px;
+				padding-left: 25px;
+				padding-bottom: 20px;
+			}
+			.partners-box{
+				position: relative;
+				display: table;
+				width: 100%;
+				border-top: 1px dotted #92acb6;
+				padding: 30px 0;
+			}
+				.partners-head{
+					position: relative;
+					display: table-cell;
+					vertical-align: middle;
+					width: 35%;
+					img{
+						max-width: 100%;
+						border: 0;
+					}
+				}
+				.partners-body{
+					position: relative;
+					display: table-cell;
+					vertical-align: middle;
+					font-weight: 700;
+					a{
+						color: #12aaeb;
+						font-family: 'PFDinDisplayPro Bold';
+						text-decoration: none;
+					}
+				}
 /*--------------------    footer    --------------------*/
 footer{
 	position: relative;
