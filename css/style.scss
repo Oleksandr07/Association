@@ -1426,6 +1426,7 @@ section{
 		overflow: hidden;
 		&:first-child{
 			border-top: 0;
+			margin-top: -30px;
 		}
 		.news-date{
 			float: none;
@@ -1477,6 +1478,7 @@ section{
 				text-align: center;
 				padding: 0;
 				margin-right: 10px;
+				margin-bottom: 5px;
 				box-sizing: border-box;
 				&:before{
 					content: none;
@@ -1562,6 +1564,7 @@ section{
 			padding: 45px 0;
 			&:first-child{
 				border-top: 0;
+				margin-top: -30px;
 			}
 		}
 			.reviews-head{
@@ -1617,6 +1620,7 @@ section{
 			padding: 45px 0;
 			&:first-child{
 				border-top: 0;
+				margin-top: -30px;
 			}
 		}
 			.practice-head{
@@ -1724,6 +1728,7 @@ section{
 			overflow: hidden;
 			&:first-child{
 				border-top: 0;
+				margin-top: -30px;
 			}
 		}
 			.projects-head{
@@ -2005,6 +2010,51 @@ section{
 		line-height: 1;
 		margin-bottom: 20px;
 	}
+	.search-box{
+		position: relative;
+		display: table;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+		.search-num{
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+			width: 40px;
+			color: #92acb6;
+			font-weight: 700;
+		}
+		.search-body{
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+		}
+			.search-date{
+				position: relative;
+				color: #92acb6;
+				font-size: 12px;
+				font-weight: 700;
+			}
+			.search-category{
+				position: relative;
+				background: #12aaeb;
+				display: inline-block;
+				vertical-align: top;
+				color: #fff;
+				font-weight: 700;
+				padding: 0 15px;
+			}
+			.search-title{
+				position: relative;
+				a{
+					color: #1c5fa6;
+					font-weight: 700;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
 /*--------------------    footer    --------------------*/
 footer{
 	position: relative;
