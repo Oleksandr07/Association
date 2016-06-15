@@ -1266,6 +1266,9 @@ section{
 					background-size: cover;
 					right: 40px;
 				}
+				img{
+					max-width: 100%;
+				}
 			}
 			.slider-nav{
 				margin: 0 35px;
@@ -1361,8 +1364,8 @@ section{
 							background-size: cover;
 							left: 25px;
 							top: 19px;
-							width: 5px;
-							height: 9px;
+							width: 4px;
+							height: 7px;
 						}
 						&:after{
 							content: '';

@@ -456,6 +456,10 @@
 			}
 		}
 	}
+	.media{
+		border-bottom: 1px dotted #87aeb8;
+		margin-bottom: 20px;
+	}
 	.media-box{
 		width: 30%;
 		margin-left: 5%;
@@ -968,6 +972,9 @@
 		}
 }
 @media only screen and (max-width:799px){
+	#main{
+		padding: 15px 0;
+	}
 	.board-leader{
 		display: block;
 		width: auto;
@@ -1200,7 +1207,7 @@
 		margin-bottom: 30px;
 	}
 	.content-slider{
-		margin: 0 -30px;
+		margin: 0 -30px 15px;
 	}
 	.content-slider-item{
 		margin: 0 5px;
