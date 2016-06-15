@@ -1074,6 +1074,7 @@ section{
 					counter-increment: count;
 					&:before{
 						content: counter(count)'.';
+						font-weight: 700;
 						margin-right: 5px;
 					}
 					ol{
@@ -1341,13 +1342,6 @@ section{
 							}
 						}
 					}
-					// &:last-child{
-					// 	a{
-					// 		&:after{
-					// 			content: none;
-					// 		}
-					// 	}
-					// }
 					a{
 						position: relative;
 						display: block;
@@ -1375,20 +1369,25 @@ section{
 							width: 80%;
 							border-bottom: 2px dotted #92acb6;
 						}
-						&:hover, &.active{
-							background: #2b5e93;
-							color: #fff;
-							&:before{
-								background: url('../img/aside-nav-arr-active.png');
-								background-size: cover;
-							}
-							&:after{
-								content: none;
-							}
+					}
+					&:hover a, &.active a{
+						background: #2b5e93;
+						color: #fff;
+						&:before{
+							background: url('../img/aside-nav-arr-active.png');
+							background-size: cover;
 						}
-						&.active{
-							font-weight: 700;
+						&:after{
+							content: none;
 						}
+					}
+					&:hover + li a, &.active + li a{
+						&:after{
+							content: none;
+						}
+					}
+					&.active{
+						font-weight: 700;
 					}
 					// &:hover + li{
 					// 	a,{
@@ -1598,6 +1597,10 @@ section{
 					}
 				}
 			}
+		}
+		.projects-links{
+			float: right;
+			padding-top: 10px;
 		}
 	}
 	.documents{
@@ -1850,6 +1853,7 @@ section{
 		margin-bottom: 30px;
 		overflow: hidden;
 		table{
+			margin-bottom: 0;
 			tbody{
 				tr{
 					background: #fff !important;
@@ -1965,6 +1969,7 @@ section{
 					}
 	.calendar{
 		position: relative;
+		border-bottom: 1px dotted #92acb6;
 		margin-bottom: 30px;
 	}
 		.calendars-box{

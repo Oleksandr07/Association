@@ -1090,6 +1090,11 @@
 			max-width: inherit;
 		}
 	}
+	.pagers{
+		.projects-links{
+			display: none;
+		}
+	}
 }
 @media only screen and (max-width:599px){
 	.slider-body{
@@ -1544,6 +1549,7 @@
 			margin-bottom: 40px;
 		}
 	}
+
 }
 
 
